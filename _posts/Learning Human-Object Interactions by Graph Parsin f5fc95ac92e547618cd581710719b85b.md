@@ -38,7 +38,7 @@ Human-object inteeraction (HOI) understanding 문제는 "자전거를 타다" "�
 
 최근 딥러닝 방법이 위에 언급한 instance recognition의 개별 task에 대해서 인상적인 발전을 보여주고 있지만, HOI recognition과 관련해서는 알려진 방법들이 적은 상태이다. 이러한 이유는 HOI가 단순한 '인식'의 문제가 아니라 사람과 객체, 그리고 그들의 복잡한 관계에 대한 정보를 통합하여 '추론(reasoning)'이 필요하기 때문이다.
 
-![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled.png](Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled.png)
+![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled.png](/assets/images/Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled.png)
 
 ---
 
@@ -64,7 +64,7 @@ HOI understanding을 위해서, 사람과 객체는 노드들로 표현되며, �
 
 ### Illustration of the forward pass of GPNN
 
-![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%201.png](Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%201.png)
+![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%201.png](/assets/images/Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%201.png)
 
 GPNN은 노드와 엣지 피처를 입력으로 받고 message passing 양식으로 Parse graph를 추론한다.
 
@@ -76,7 +76,7 @@ G = (V, E, Y) 를 완전한 HOI 그래프라고 하자. parse graph g=(V_g, E_g,
 
 우리는 주어진 노드 피처 $\gamma$_v 와 엣지 피처 $\gamma$_E 를 이용하여 데이터의 확률분포 p를 따르는 데이터를 가장 잘 설명하는 최적의 parse graph g*를 추론해야 한다.
 
-![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%202.png](Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%202.png)
+![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%202.png](/assets/images/Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%202.png)
 
 위 식에서 앞단은 parse graph의 노드들에 대한 labeling probability를 의미하고, 뒷단은 그래프 구조에 대한 확률을 의미한다. GPNN의 네가지 함수들은 각각 개별적인 모듈로서 GPNN의 forward pass를 수행한다. 위에서 언급한 link function, message function, update function, readout function 이다.
 
@@ -86,7 +86,7 @@ G = (V, E, Y) 를 완전한 HOI 그래프라고 하자. parse graph g=(V_g, E_g,
 
 링크 함수 L은 노드 피쳐 $\gamma$_v 와 엣지 피처 $\gamma$_E 를 입력으로 받고 adjacency matrix A를 출력한다.
 
-![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%203.png](Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%203.png)
+![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%203.png](/assets/images/Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%203.png)
 
 위 그림에서, A_vw는 인접행렬 A의 (v, w) entry를 의미하고, $\gamma$_vw 는 v와 w를 잇는 엣지 피처를 의미한다. 이 인접행렬은 parse graph g 의 형태를 근사화하고, parse graph에서 message propagation을 할때, 이 soft adjacency matrix 가 엣지 사이에 전달되는 정보량을 조절한다.
 
@@ -99,13 +99,13 @@ G = (V, E, Y) 를 완전한 HOI 그래프라고 하자. parse graph g=(V_g, E_g,
 
 **[Belief Propagation](https://tastyprogramming.tistory.com/7)** : 베이시안 네트워크 상의 모든 확률 변수들의 사후 분포 계산은 NP-hard이기 때문에, 근사해를 추정하는 기법 중에 하나이다. 그래프 모델에서 관측된 일부 확률변수의 분포(Evidence)가 주어졌을 때, 그로부터 직간접적으로 영향을 받는 모든 관측되지 않는 확률변수의 분포를 추정하는 것.
 
-![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%204.png](Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%204.png)
+![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%204.png](/assets/images/Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%204.png)
 
 ---
 
 각 반복 단계 s 마다, 두 함수들은 다음을 계산하게 된다.
 
-![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%205.png](Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%205.png)
+![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%205.png](/assets/images/Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%205.png)
 
 위에 m_v는 노드 v에 대해서 들어오는 메시지 주요 정보, h_v는 노드 v의 히든 스테이트를 의미한다.
 
@@ -122,7 +122,7 @@ U는 업데이트 함수로서 히든 노드 스테이트들을 들어오는 메
 
 마지막으로, readout function은 각 노드들의 히든 스테이트을 입력으로 받고 라벨을 출력한다.
 
-![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%206.png](Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%206.png)
+![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%206.png](/assets/images/Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%206.png)
 
 readout function R이 노드 v의 히든 스테이트 h_v를 activation하여 출력 y를 계산한다.
 
@@ -130,12 +130,12 @@ readout function R이 노드 v의 히든 스테이트 h_v를 activation하여 �
 
 A를 학습 시작 단계에서만 학습하는 것이 아니라, A를 업데이트 된 노드정보와 엣지피처를 이용한다. 따라서 
 
-![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%203.png](Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%203.png)
+![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%203.png](/assets/images/Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%203.png)
 
 위 식을 아래와 같이 iterations s 에서 일반화할 수 있다.
 
-![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%207.png](Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%207.png)
+![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%207.png](/assets/images/Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%207.png)
 
-![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%208.png](Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%208.png)
+![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%208.png](/assets/images/Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%208.png)
 
 이를 통해, 그래프 구조와 메시지 업데이트는 동시에 이루어지고, 통일된 프레임워크로 반복 학습된다.
