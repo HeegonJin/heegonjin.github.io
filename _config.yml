@@ -101,8 +101,8 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      #url: "mailto:heegonjin@vilab.cau.ac.kr"
-    - label: "Lab Website"
+      url: "mailto:heegonjin@vilab.cau.ac.kr"
+    - label: "Visual Intelligence Lab"
       icon: "fas fa-fw fa-link"
       url: "https://www.vilab.cau.ac.kr/home"
     - label: "Twitter"
