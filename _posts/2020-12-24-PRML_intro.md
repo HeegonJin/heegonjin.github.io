@@ -1,5 +1,5 @@
 ---
-tilte: "PRML intro"
+title: "PRML intro"
 category:
     Machine Learning
 tag:

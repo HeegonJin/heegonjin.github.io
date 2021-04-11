@@ -1,9 +1,9 @@
 ---
-title: "gpnn"
+title: "GPNN"
 category:
-    Machine Learning
+    Deep Learning
 tag:
-    PRML
+    Paper Review
 author_profile: true
 toc : true
 use_math : true
@@ -21,7 +21,7 @@ comments: true
 structured knowledge(structured-rnn 논문 참고)를 통합시키면서 end-to-end로 미분가능하다. 
 주어진 scene에 대하여, GPNN은 parse graph를 inference하는데, 구체적으로는 다음과 같다.
 1)  HOI graph structure을 표현하는 인접행렬(adjacency matrix)
-<!-- 
+
 2) 각 노드들의 라벨
 
 Message Passing inference framework(Message passing Neural Network 참고)를 이용하여, 
@@ -138,4 +138,4 @@ A를 학습 시작 단계에서만 학습하는 것이 아니라, A를 업데이
 
 ![Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%208.png](/assets/images/Learning%20Human-Object%20Interactions%20by%20Graph%20Parsin%20f5fc95ac92e547618cd581710719b85b/Untitled%208.png)
 
-이를 통해, 그래프 구조와 메시지 업데이트는 동시에 이루어지고, 통일된 프레임워크로 반복 학습된다. -->
+이를 통해, 그래프 구조와 메시지 업데이트는 동시에 이루어지고, 통일된 프레임워크로 반복 학습된다.
