@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Heegon's Tech Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Heegon Jin"
 description              : "컴퓨터비전과 머신러닝, 그리고 딥러닝을 다루는 블로그"
 url                      : "https://heegonjin.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -30,9 +30,9 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "heegonjin.github.io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -95,16 +95,16 @@ analytics:
 author:
   name             : "Heegon Jin"
   avatar           : "https://avatars2.githubusercontent.com/u/47757449?s=460&u=9e96270dc4907590a9bc509930960befe75b26ef&v=4"
-  bio              : "I am a graduate student studying Computer Vision, Machine Learning and Deep Learning"
+  bio              : "I am an student researcher interested in Computer Vision, and Deep Learning"
   location         : "Seoul, Korea"
   email            : "heegonjin@vilab.cau.ac.kr"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       #url: "mailto:heegonjin@vilab.cau.ac.kr"
-    - label: "Website"
+    - label: "Lab Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://www.vilab.cau.ac.kr/home"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -116,7 +116,7 @@ author:
       url: "https://github.com/HeegonJin"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/is_he_g0ne/"
 
 # Site Footer
 footer:
@@ -129,7 +129,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/HeegonJin"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -138,7 +138,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/is_he_g0ne/"
 
 
 # Reading Files
@@ -209,7 +209,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -276,6 +276,18 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true # 블로그 댓글 기능 true
       share: true
       related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
