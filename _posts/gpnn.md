@@ -1,9 +1,9 @@
 ---
-title: "GPNN"
+title: "gpnn"
 category:
-    Deep Learning
+    Machine Learning
 tag:
-    Paper Review
+    PRML
 author_profile: true
 toc : true
 use_math : true
