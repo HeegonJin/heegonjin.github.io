@@ -12,8 +12,6 @@ comments: true
 ---
 
 
-# Spatial Pyramid Pooling Network
-
 @[https://yeomko.tistory.com/14](https://yeomko.tistory.com/14)
 
 기존 CNN 아키텍쳐들은 input size가 고정되어 있었다. (ex. 224 x 224)
