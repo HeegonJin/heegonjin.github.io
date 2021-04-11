@@ -1,3 +1,16 @@
+---
+tilte: "GPNN"
+category:
+    Deep Learning
+tag:
+    Paper Review
+author_profile: true
+toc : true
+use_math : true
+comments: true
+---
+
+
 # Learning Human-Object Interactions by Graph Parsing Neural Networks
 
 # Abstract
