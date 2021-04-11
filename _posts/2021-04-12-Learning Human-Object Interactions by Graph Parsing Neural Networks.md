@@ -1,5 +1,5 @@
 ---
-title: "GPNN"
+title: "Learning Human-Object Interactions by Graph Parsing Neural Networks"
 category:
     Deep Learning
 tag:
