@@ -1,5 +1,5 @@
 ---
-tilte: "GPNN"
+title: "GPNN"
 category:
     Deep Learning
 tag:
