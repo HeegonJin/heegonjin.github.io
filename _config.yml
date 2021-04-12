@@ -20,7 +20,7 @@ title                    : "Heegon's Tech Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Heegon Jin"
-description              : "컴퓨터비전과 머신러닝, 그리고 딥러닝을 다루는 블로그"
+description              : "컴퓨터비전과 딥러닝을 다루는 블로그"
 url                      : "https://heegonjin.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "HeegonJin/heegonjin.github.io"
@@ -274,6 +274,7 @@ defaults:
       type: posts
     values:
       layout: single
+      classes: wide
       author_profile: true
       read_time: true
       comments: true
