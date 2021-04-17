@@ -11,8 +11,6 @@ comments: true
 ---
 
 
-@[https://shuuki4.wordpress.com/2016/01/13/batch-normalization-설명-및-구현/](https://shuuki4.wordpress.com/2016/01/13/batch-normalization-%EC%84%A4%EB%AA%85-%EB%B0%8F-%EA%B5%AC%ED%98%84/)
-
 @[https://arxiv.org/abs/1502.03167](https://arxiv.org/abs/1502.03167)
 
 Batch Normalization을 사용하는 근본적인 이유는 Gradient Vanishing / Gradient Exploding 이 일어나지 않도록 하기 위해서이다. 

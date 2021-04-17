@@ -12,8 +12,6 @@ comments: true
 ---
 
 
-@[https://yeomko.tistory.com/14](https://yeomko.tistory.com/14)
-
 기존 CNN 아키텍쳐들은 input size가 고정되어 있었다. (ex. 224 x 224)
 
 입력 이미지를 고정된 input size에 맞춰주기 위해, 이미지를 crop하거나 warping하는 과정이 필요했다. 이는 결국 이미지를 변형시키게 되는 것이므로 본래 이미지 정보를 온전히 담지 못한다는 단점이 있다.

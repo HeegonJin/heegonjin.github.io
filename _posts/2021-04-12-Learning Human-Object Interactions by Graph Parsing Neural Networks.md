@@ -11,8 +11,6 @@ comments: true
 ---
 
 
-# Learning Human-Object Interactions by Graph Parsing Neural Networks
-
 # Abstract
 
 논문에서 해결하고자 하는 테스크(task)는, 이미지와 비디오에 대해서 사람-객체 상호작용(Human-object Interactions)을 감지하고(detecting) 인식(recognition) 하는 것이다.

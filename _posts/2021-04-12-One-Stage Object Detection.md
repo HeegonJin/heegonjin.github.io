@@ -13,8 +13,6 @@ use_math : true
 comments: true
 ---
 
-@[https://machinethink.net/blog/object-detection/](https://machinethink.net/blog/object-detection/)
-
 # Overview
 
 Object detection은 image classification에 비해서 더 까다로운 문제다.
@@ -115,3 +113,5 @@ base network로 사용될 수 있는 것에는 제한이 없다. Inception, Resn
 이렇게 만들어진 feature extractor 위에, 우리는 몇 개의 컨볼루션 레이어를 더 얹을 수 있다. 이 레이어들은 bounding box들을 예측하고 object의 class probability를 구하기 위해 **fine-tuned** 된다. 이 부분이 모델에서 object detection을 맡는 부분이라고 할 수 있다.
 
 Object detector을 학습시키기 위해 널리 사용되는 데이터셋들이 많이 존재하는데, 이 예시에서는 20가지의 class가 있는 Pascal VOC dataset을 활용하기로 한다. 그렇게 해서 신경망의 첫 부분(base network 혹은backbone)은 ImageNet을 이용해 학습하고, 두번째 부분(object detection을 맡는 부분)은 VOC를 사용한다.
+
+@[https://machinethink.net/blog/object-detection/](https://machinethink.net/blog/object-detection/)

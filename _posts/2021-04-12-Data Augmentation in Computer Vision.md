@@ -12,8 +12,6 @@ comments: true
 ---
 
 
-@[https://towardsdatascience.com/data-augmentation-in-yolov4-c16bd22b2617](https://towardsdatascience.com/data-augmentation-in-yolov4-c16bd22b2617)
-
 ![Data%20Augmentation%20in%20Computer%20Vision%20e6d69b40b13a4b3e953d35947d67a5d7/Untitled.png](/assets/images/Data%20Augmentation%20in%20Computer%20Vision%20e6d69b40b13a4b3e953d35947d67a5d7/Untitled.png)
 
 YOLOv4에 등장하는 "bag of freebies"에는 inference time에서 latency를 증가시키지 않으면서 모델의 성능을 증가시키는 여러 기술들이 있다.
@@ -65,3 +63,5 @@ Random Erase와 매우 유사하지만, overlaid occlusion이 constant value로 
 **MixUp -** 두 데이터의 이미지와 라벨을 weighted linear interpolation 하여 새로운 샘플을 생성하는 기법.
 
 ![Data%20Augmentation%20in%20Computer%20Vision%20e6d69b40b13a4b3e953d35947d67a5d7/Untitled%207.png](/assets/images/Data%20Augmentation%20in%20Computer%20Vision%20e6d69b40b13a4b3e953d35947d67a5d7/Untitled%207.png)
+
+@[https://towardsdatascience.com/data-augmentation-in-yolov4-c16bd22b2617](https://towardsdatascience.com/data-augmentation-in-yolov4-c16bd22b2617)
