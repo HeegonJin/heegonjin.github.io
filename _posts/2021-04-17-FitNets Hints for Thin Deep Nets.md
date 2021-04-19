@@ -105,7 +105,7 @@ FitNet의 파라미터들에 대한 학습에서는, 입력층부터 Guided laye
 
 ![FitNets%20Hints%20for%20Thin%20Deep%20Nets%20d6827f8318484fe3b5865671ef662f7f/Untitled%206.png](/assets/images/FitNets%20Hints%20for%20Thin%20Deep%20Nets%20d6827f8318484fe3b5865671ef662f7f/Untitled%206.png)
 
-위 식에서 뒷단인 P_t 와 P_s 사이의 cross entropy는 P_t의 엔트로피와 P_t, P_s 사이의 KL divergence의 합으로 생각할 수 있다. 우리가 원하는 것은 cross entropy를 줄이는 것이고, 처음에는 P_t의 엔트로피가 높은 상태에서 시작하게 되며, 엔트로피가 높다는 것은 teacher의 confidence가 높다는 것으로 해석할 수 있다. 또 confidence가 높다는 것은 결국 쉬운 example을 학습하는 것으로 생각할 수 있다. 따라서 학습 초기에 쉬운 example을 학습할 때는 람다값 $\lambda$ 을 높게 설정하여 학습 효과를 크게 주고, 학습이 진행되고 점점 어려운 example들을 학습하게 되면 $\lambda$ 값 또한 linear decay시켜 학습에 미치는 영향을 줄이게 한다. 
+위 식에서 뒷단인 P_t 와 P_s 사이의 cross entropy는 P_t의 엔트로피와 P_t, P_s 사이의 KL divergence의 합으로 생각할 수 있다.또 confidence가 높다는 것은 결국 쉬운 example을 학습하는 것으로 생각할 수 있다. 따라서 학습 초기에 쉬운 example을 학습할 때는 람다값 $\lambda$ 을 높게 설정하여 학습 효과를 크게 주고, 학습이 진행되고 점점 어려운 example들을 학습하게 되면 $\lambda$ 값 또한 linear decay시켜 학습에 미치는 영향을 줄이게 한다. 
 
 # Results
 
