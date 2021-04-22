@@ -53,6 +53,7 @@ Batch Normalization은 이 두 문제를 해결하면서도 global differentiabl
 
 이때 ${\gamma}$, $\beta$는 학습 가능한 모델 파라미터이다.
 
-그리고, 전체 데이터의 expectation을 계산하는 대신, 주어진 mini-batch의 sample mean/variance를 계산하여 대입한다.
+그리고, 전체 데이터의 expectation을 계산하는 대신, 주어진 mini-batch의 sample mean/variance를 계산하여 대입한다.  
 
+Training Data로 학습을 시킬 때는 현재 보고있는 mini-batch에서 평균과 표준편차를 구하지만, Test Data를 사용하여 Inference를 할 때는 다소 다른 방법을 사용한다. mini-batch의 값들을 이용하는 대신 지금까지 본 전체 데이터를 다 사용한다는 느낌으로,  training 할 때 현재까지 본 input들의 이동평균 (moving average) 및 unbiased variance estimate의 이동평균을 계산하여 저장해놓은 뒤 이 값으로 normalize를 한다.
 ![Batch%20Normalization%20fac1e2729c6144a4bf131c690b0cd8a7/Untitled%203.png](/assets/images/Batch%20Normalization%20fac1e2729c6144a4bf131c690b0cd8a7/Untitled%203.png)
