@@ -1,3 +1,18 @@
+---
+title: "Pytorch Tensor Operations and Contiguous Array"
+category:
+    Pytorch
+tag:
+    - Pytorch
+author_profile: true
+toc : true
+use_math : true
+comments: true
+---
+
+
+
+
 # Pytorch의 Tensor 다루기
 
 ## reshape, view의 차이점과 contiguous array
