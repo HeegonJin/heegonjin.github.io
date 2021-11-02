@@ -58,6 +58,6 @@ $\text{stride}[i] = \text{stride}[i+1] \times \text{size}[i+1]stride[i]=stride[i
 
 ![Untitled](/assets/images/Pytorch Tensor Operations/Untitled 2.png)
 
-![Untitled](/assets/images/Pytorch Tensor Operations/Untitled.png)
+![Untitled](/assets/images/Pytorch Tensor Operations/Untitled 3.png)
 
 퍼포먼스 측면에서, 대부분의 경우 우리가 접근하는 메모리 주소가 인접하다면 처리가 더 빠른데 RAM에서 어떤 value를 가져올 때 인접한 주소의 것들이 같이 cpu에 캐싱되는 이유로 생각하면 될 것 같다. 즉 이미 contiguous한 array에 대한 operation이 요소들이 메모리상에 서로 떨어져 있는 array보다 더 빠른 연산이 가능한데, 같은 이유로 C-contiguous한 pytorch tensor에는 row-wise operation이 columnwise-operation보다 대체로 빠른 경향을 보인다고 한다.
